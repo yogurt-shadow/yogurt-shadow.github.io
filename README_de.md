@@ -84,7 +84,7 @@ twitter: https://twitter.com/
 
 # Bilder (z. B. Ihr Profilbild und das Favicon Ihrer Website)
 # "favicon" und "favicon_dark" werden für den Hell- bzw. Dunkelmodus verwendet.
-avatar: ./assets/img/avatar.png
+avatar: ./assets/img/avator.jpeg
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 
