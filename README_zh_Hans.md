@@ -62,7 +62,7 @@ Minimal Light 主题有以下的变量, 你可以在`_config.yml`文件中修改
   ```yaml
 # 基本信息
 title: 你的名字
-position: Ph.D. Student
+position: MasterStudent
 affiliation: 你的单位
 email: yourname (at) example.edu
 

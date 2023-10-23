@@ -64,7 +64,7 @@ Das Minimal Light-Thema berücksichtigt die folgenden Variablen, wenn es in der 
   ```yaml
 # Grundinformation
 title: Ihren Namen
-position: Ph.D. Student
+position: MasterStudent
 affiliation: Ihre Zugehörigkeit
 email: yourname (at) example.edu
 
