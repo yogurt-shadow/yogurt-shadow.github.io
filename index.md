@@ -4,51 +4,78 @@ layout: homepage
 
 ## About Me
 
-I'm a <a href="https://med.nyu.edu/departments-institutes/population-health/divisions-sections-centers/biostatistics/" target="_blank"> Biostatistics</a> Ph.D. candidate at <a href="https://www.nyu.edu/" target="_blank"> New York University</a>'s <a href="https://med.nyu.edu/" target="_blank"> Grossman School of Medicine</a>,
-<!-- , specifically within the <a href="https://med.nyu.edu/research/sackler-institute-graduate-biomedical-sciences/" target="_blank"> Vilcek institute of Biomedical Sciences</a> and the Department of <a href="https://med.nyu.edu/departments-institutes/population-health/" target="_blank"> Population Health</a>. Under the mentorship of Prof.  -->
-working under the mentorship of Prof.<a href="https://med.nyu.edu/faculty/thaddeus-tarpey" target="_blank"> Thaddeus Tarpey</a>. My research involves developing statistical models that cater to high-dimensional complex data, such as functional and imaging data.
-
-In the summer of 2022, I had the opportunity to work as a Data Scientist Intern at <a href="https://about.google" target="_blank"> Google</a>, where I applied my statistical skills to real-world problems. 
-Prior to joining the Ph.D. program, I completed my master's degree in Biostatistics and Data Science from <a href="https://www.cornell.edu" target = "_blank"> Cornell University</a> advised by Prof. <a href= "https://www.idiaz.xyz" target = "_blank"> Iván Díaz</a>, and my bachelor's degree in International Finance from <a href="https://www.cueb.edu.cn" target = "_blank"> Capital University of Economics and Business</a>. 
-
-<!-- 
-I am an alumnus of the <a href="https://opencasestudies.github.io/" target="_blank"> Open Case Study Project</a> at <a href="https://www.jhsph.edu/" target="_blank"> the Bloomberg School of Public Health </a> of <a href="https://www.jhu.edu/" target="_blank"> the Johns Hopkins University</a>. -->
-
-Outside of academia, I began my journey as a professional swimmer at the age of 5 and went on to achieve several regional and national championships. I'm also passionate about Chinese calligraphy, and my artwork has been exhibited in top galleries and museums including the <a href="http://www.namoc.org/" target="_blank"> National Art Museum of China (Beijing)</a>. In addition, I am also interested in oil painting, and aeromodelling.
+This is Zhonghan Wang on the web! Currently I’m studying in State Key Lab of Computer Science, Institute of Software,
+Chinese Academy of Sciences. My research focused on satisfiablity modulos theory (SMT) solving on nonlinear real
+arithmetic. I studied optical devices and optical communication during bachelor school.
 
 
 ## Research Interests
-- **Manifold Learning:** positive semi-definite manifolds learning
-- **Machine Learning:** fairness AI, penalization and augmentation methods
-- **Functional Data Analysis:** functional regression, and clustering methods
-- **High-Dimensional Statistics:** matrix-valued regression and clustering, positive semi-definite matrices estimations
+- **Constrant Solving** SMT for nonlinear real arithmetic (QF_NRA).
 
+## Publications
+### Journal Papers
 
-## Awards
-- **[May. 2023]** <a href="https://gsas.nyu.edu/admissions/financial-aid/graduate-school-fellowships-and-assistantships.html" target="_blank">*MacCracken Awards*</a> for outstanding research and activities
+-**Zhonghan Wang#**, Qiang Wang#, Xu Han, Yuxi Fang, Yuxuan He, Wenpu Geng, Zhongqi Pan, and Yang Yue*, "A Low-Cost
+      High-Resolution Solid-State Lidar With Wavelength Division Multiplexed Components and Interleaved Orthogonal
+      Polarization Grating Couplers," Journal of Lightwave Technology, vol. 40, no. 7, pp. 2072-2079, 2022.
 
+-Tianxu Xu, Dong An, Yuetong Jia, Jiaqing Chen, Hongkun Zhong, Yishen Ji, Yushi Wang, **Zhonghan Wang**, Qiang
+      Wang, Zhongqi
+      Pan, and Yang Yue*, "3D joints estimation of human body using part segmentation," Information Sciences, vol. 603,
+      pp.
+      1-15, 2022.
 
-<!-- {% include_relative _includes/publications.md %} -->
+-Xu Han#, Qiang Wang#, **Zhonghan Wang**, Yuxi Fang, Yuxuan He, Wenpu Geng, Zhongqi Pan, and Yang Yue*,
+      "Solid-State
+      Photonics-Based Lidar With Large Beam-Steering Angle by Seamlessly Merging Two Orthogonally Polarized Beams," IEEE
+      Journal of Selected Topics in Quantum Electronics, vol. 27, no. 1, paper 8300608, 2021.
 
-{% include_relative _includes/projects.md %}
+-Tianxu Xu, Dong An, **Zhonghan Wang**, Sicheng Jiang, Chengnuo Meng, Yiwen Zhang, Qiang Wang, Zhongqi Pan, and
+      Yang Yue*,
+      "3D Joints Estimation of the Human Body in Single-Frame Point Cloud," IEEE Access, vol. 8, pp. 178900-178908,
+      2020.
 
-{% include_relative _includes/talks.md %}
+### Conference Papers
+-**Zhonghan Wang**, Qiang Wang, Xu Han, Yuxi Fang, Yuxuan He, Wenpu Geng, Zhongqi Pan, and Yang Yue*, "Lidar
+      with Wavelength
+      Division Multiplexed Laser Array and Polarization-Interleaved Grating Couplers," Frontiers in Optics (FiO), paper
+      JTu1B.10, Washington, D.C., USA, Sep. 2020.
 
+-Yang Yue*, Yuxuan He, Qiang Wang, **Zhonghan Wang** and Xu Han, "Solid-State Integrated Lidar Using
+      Orthogonally Polarized
+      Beams and Wavelength Division Multiplexed Components," The 20th International Conference on Optical Communications
+      and
+      Networks (ICOCN’2022), paper Su2E.1, Shenzhen, China, Aug. 2022.
 
+-Yuxuan He, **Zhonghan Wang**, Xu Han, Yuxi Fang, Wenpu Geng, Qiang Wang, Zhongqi Pan, and Yang Yue*, "Low-Cost
+      Solid-State
+      Lidar with Wide Angle of View Using Wavelength Division Multiplexed Laser Array," 2021 IEEE 17th International
+      Conference on Group IV Photonics (GFP), paper ThB2.5, Malaga, Spain, Dec. 2021.
 
+-Tianxu Xu, Dong An, Yuetong Jia, Jiaqing Chen, Hongkun Zhong, Yishen Ji, Yushi Wang, **Zhonghan Wang**, Qiang
+      Wang, Zhongqi
+      Pan, and Yang Yue*, "3D Human Joints Extraction Using Part Segmentation," Frontiers in Optics (FiO), paper
+      JW7A.34,
+      Washington, D.C., USA, Oct. 2021.
 
+-Yuxuan He, Qiang Wang, **Zhonghan Wang**, Xu Han, Yuxi Fang, and Yang Yue*, "Solid-State Lidar with Wide
+      Steering Angle
+      Using Counter-Propagating Beams," IEEE Photonics Conference (IPC), paper ThB1.2, Vancouver, Canada, Oct. 2021.
 
+-Yuxi Fang, Qiang Wang, Xu Han, **Zhonghan Wang**, Yuxuan He, Wenpu Geng, Zhongqi Pan, and Yang Yue*,
+      "Two-Dimensional Beam
+      Steering in Silicon-On-Insulator Platform Using Wavelength Tuning," Frontiers in Optics (FiO), paper JTu1B.1,
+      Washington, D.C., USA, Sep. 2020.
 
+-Xu Han, Qiang Wang, **Zhonghan Wang**, Yuxi Fang, Yuxuan He, Wenpu Geng, Zhongqi Pan, and Yang Yue*,
+      "Integrated Lidar with
+      Wide Steering Angle by Combining Outputs of Orthogonally Polarized Beams," Conference on Lasers and
+      Electro-Optics/Pacific Rim (CLEO/PR), paper C12H_5, Sydney, Australia, Aug. 2020.
 
-## Collaboration
-
-<!-- - **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019. -->
-- **[Feb. 2023]** <a href="https://www.sciencedirect.com/science/article/pii/S089990072200346X" target="_blank">*Low muscle mass is associated with a higher risk of all–cause and cardiovascular disease–specific mortality in cancer survivors*</a> has been accepted by **Nutrition**. 
-- **[Aug. 2021]** <a href="https://www.jmcp.org/doi/full/10.18553/jmcp.2021.27.10.1482" target="_blank">*Validation of EHR medication fill data obtained through electronic linkage with pharmacies*</a> has been accepted by the **Journal of Managed Care & Specialty Pharmacy**.
-- **[Jan. 2021]** <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jocd.13486" target="_blank">*Quantitative evaluation of rejuvenation treatment of nasolabial fold wrinkles by regression model and 3D photography*</a> has been accepted by the **Journal of Cosmetic Dermatology**.
-
+-Yuxi Fang, Changjing Bao, **Zhonghan Wang**, Yan-ge Liu, Bo Liu, Hao Huang, Yongxiong Ren, Zhongqi Pan, and
+      Yang Yue*,
+      "On-Chip Polarization Beam Splitter Using Coupled Si3N4/SiO2 Horizontal Slot Waveguides," Conference on Lasers and
+      Electro-Optics/Pacific Rim (CLEO/PR), paper C12H_3, Sydney, Australia, Aug. 2020.
 
 {% include_relative _includes/services.md %}
 
