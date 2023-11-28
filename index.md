@@ -10,9 +10,12 @@ arithmetic. I studied optical devices and optical communication during bachelor 
 
 
 ## Research Interests
-- **Constrant Solving** SMT for nonlinear real arithmetic (QF_NRA).
+- **Constrant Solving:**  SMT for nonlinear real arithmetic (QF_NRA).
 
-## Publications
+## Publications [Master, CS]
+-**Zhonghan Wang**, Bohua Zhan*, Bohan Li and Shaowei Cai, "Efficient Local Search for Nonlinear Real Arithmetic", 25th International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI'2024), London, UK. [pdf](assets/files/LS_NRA.pdf)
+
+## Publications [Bachelor, EE]
 ### Journal Papers
 
 -**Zhonghan Wang#**, Qiang Wang#, Xu Han, Yuxi Fang, Yuxuan He, Wenpu Geng, Zhongqi Pan, and Yang Yue*, "A Low-Cost
