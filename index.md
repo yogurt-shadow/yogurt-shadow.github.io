@@ -13,7 +13,11 @@ arithmetic. I studied optical devices and optical communication during bachelor 
 - **Constrant Solving:**  SMT for nonlinear real arithmetic (QF_NRA).
 
 ## Publications [Master, CS]
--**Zhonghan Wang**, Bohua Zhan*, Bohan Li and Shaowei Cai, "Efficient Local Search for Nonlinear Real Arithmetic", 25th International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI'2024), London, UK. [pdf](assets/files/LS_NRA.pdf)
+-**Efficient Local Search for Nonlinear Real Arithmetic**[pdf](assets/files/LS_NRA.pdf)
+
+**Zhonghan Wang**, Bohua Zhan*, Bohan Li and Shaowei Cai.
+
+25th International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI'2024), London, UK.
 
 ## Publications [Bachelor, EE]
 ### Journal Papers
