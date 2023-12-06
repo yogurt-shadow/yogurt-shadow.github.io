@@ -12,6 +12,10 @@ arithmetic. I studied optical devices and optical communication during bachelor 
 ## Research Interests
 - **Constrant Solving:**  SMT for nonlinear real arithmetic (QF_NRA).
 
+## Education
+- Master in Computer Science and Technology, Institute of Software, Chinese Academy of Sciences
+- Bachelor in Electronic Science and Technology, Nankai University
+
 ## Publications [Master, CS]
 -**Efficient Local Search for Nonlinear Real Arithmetic** \
 **Zhonghan Wang**, Bohua Zhan\*, Bohan Li and Shaowei Cai.\
