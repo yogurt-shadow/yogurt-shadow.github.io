@@ -89,4 +89,6 @@ arithmetic. I studied optical devices and optical communication during bachelor 
 
 {% include_relative _includes/services.md %}
 
+{% include_relative _includes/publications.md %}
 
+{% include_relative _includes/services.md %}

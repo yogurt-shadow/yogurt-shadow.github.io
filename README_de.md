@@ -64,7 +64,7 @@ Das Minimal Light-Thema berücksichtigt die folgenden Variablen, wenn es in der 
   ```yaml
 # Grundinformation
 title: Ihren Namen
-position: MasterStudent
+position: Ph.D. Student
 affiliation: Ihre Zugehörigkeit
 email: yourname (at) example.edu
 
@@ -84,7 +84,7 @@ twitter: https://twitter.com/
 
 # Bilder (z. B. Ihr Profilbild und das Favicon Ihrer Website)
 # "favicon" und "favicon_dark" werden für den Hell- bzw. Dunkelmodus verwendet.
-avatar: ./assets/img/avator.jpeg
+avatar: ./assets/img/avatar.png
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 

@@ -62,7 +62,7 @@ Minimal Light 主题有以下的变量, 你可以在`_config.yml`文件中修改
   ```yaml
 # 基本信息
 title: 你的名字
-position: MasterStudent
+position: Ph.D. Student
 affiliation: 你的单位
 email: yourname (at) example.edu
 
@@ -79,7 +79,7 @@ linkedin: https://www.linkedin.com/
 twitter: https://twitter.com/
 
 # 图片路径
-avatar: ./assets/img/avator.jpeg
+avatar: ./assets/img/avatar.png
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
 

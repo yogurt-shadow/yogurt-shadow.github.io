@@ -1,4 +1,4 @@
-<!-- # The Minimal Light Theme
+# The Minimal Light Theme
 
 [![LICENSE](https://img.shields.io/github/license/yaoyao-liu/minimal-light?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/minimal-light/blob/main/LICENSE)
 
@@ -25,28 +25,49 @@ A template for Max Planck Institute for Informatics is available here: [[link](h
 
 ```
 .
-├── _includes                    # the Markdown files for publications and services  
+├── _data                    
+|   └── publications.yml                      # the YAML file for publications
+├── _includes                    
+|   ├── publications.md                       # the Markdown file for publications
+|   └── services.md                           # the Markdown file for services
 ├── _layouts                  
-|   └── homepage.html            #  the html template for the homepage 
-├── _sass                     
-|   └── minimal-light.scss       #  this file will be compiled into a CSS file to control the style of the page
-├── assets                       #  some files
-├── .gitignore                   #  this file specifies intentionally untracked files that Git should ignore
-├── CNAME                        #  the custom domain, will be used by GitHub page sevice
-├── Gemfile                      #  a RubyGems related file
-├── LICENSE                      #  the license file
-├── README.md                    #  the readme file (English)
-├── README_de.md                 #  the readme file (German)
-├── README_zh_Hans.md            #  the readme file (Simplified Chinese)
-├── README_zh_Hant.md            #  the readme file (Traditional Chinese)
-├── _config.yml                  #  the Jekyll configuration file, including some options of the page  
-└── index.md                     #  the content of the index page, using Markdown
+|   └── homepage.html                         #  the html template for the homepage 
+├── _sass
+|   ├── minimal-light.scss                    #  this file will be compiled into a CSS file to control the style of the page              
+|   └── minimal-light-no-dark-mode.scss       #  this file is similar to minimal-light.scss with the dark mode disabled
+├── assets                                    #  some files
+├── html_source_file                          #  compiled HTML files
+├── .gitignore                                #  this file specifies intentionally untracked files that Git should ignore
+├── CNAME                                     #  the custom domain, will be used by GitHub page sevice
+├── Gemfile                                   #  a RubyGems related file
+├── LICENSE                                   #  the license file
+├── README.md                                 #  the readme file (English)
+├── README_de.md                              #  the readme file (German)
+├── README_zh_Hans.md                         #  the readme file (Simplified Chinese)
+├── README_zh_Hant.md                         #  the readme file (Traditional Chinese)
+├── _config.yml                               #  the Jekyll configuration file, including some options of the page  
+└── index.md                                  #  the content of the index page, using Markdown
 ```
 
-## Usage
+## Getting Started
 
-### Using on GitHub 
+This template can be used in the following two ways: 
+- **Using with the GitHub Pages Service.** GitHub will provide you with a server to generate and host web pages.
+- **Using locally with Jekyll.** You may install Jekyll on your own computer and generate static web pages (i.e., HTML files) with this template. After that, you may upload the HTML files to your server.
 
+The detailed instructions are available below.
+
+
+### Using with the GitHub Pages Service
+
+There are two ways to use this template on GitHub:
+
+#### Fork this repository
+- Fork this repository (or [use this repository as a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)) and change the name to `your-username.github.io`.
+
+- Enable the GitHub pages for that repository following the steps [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
+
+#### Using this repository as a remote theme
 To use this theme, add the following to your repository's `_config.yml`:
 
 ```yaml
@@ -57,15 +78,11 @@ Please note that adding the above line will directly apply all the default setti
 
 If you hope to edit any files (e.g., `index.md`), you still need to copy them to your repository.
 
-You may also fork this repository (or [use this repository as a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)) and change the name to `your-username.github.io`.
-
-Then you need to enable the GitHub pages for that repository following the steps [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
-
 ### Using Locally with Jekyll
 
-*You need to install [Ruby](https://www.ruby-lang.org/en/) and [Jekyll](https://jekyllrb.com/) fisrt.*
+First, install [Ruby](https://www.ruby-lang.org/en/) and [Jekyll](https://jekyllrb.com/). The install instructions can be found here: <https://jekyllrb.com/docs/installation/#guides>
 
-Clone this repository:
+Then, clone this repository:
 
 ```bash
 git clone https://github.com/yaoyao-liu/minimal-light.git
@@ -75,10 +92,15 @@ Install and run:
 
 ```bash
 bundle install
+bundle add webrick
 bundle exec jekyll server
 ```
 View the live page using `localhost`:
-<http://localhost:4000>. You can get the html files in `_site` folder.
+<http://localhost:4000>. You can get the HTML files in `_site` folder.
+
+### Using the HTML version
+
+The compiled HTML files are available in the `html_source_file` folder. If you don't like Jekyll, you may directly edit and use the HTML version.
 
 ## Customizing
 
@@ -89,7 +111,7 @@ The Minimal Light theme will respect the following variables, if set in your sit
   ```yaml
 # Basic Information 
 title: Your Name
-position: MasterStudent
+position: Ph.D. Student
 affiliation: Your Affiliation
 email: yourname (at) example.edu
 
@@ -102,48 +124,53 @@ canonical: https://minimal-light-theme.yliu.me/
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
 google_scholar: https://scholar.google.com/
-cv_link: files/Curriculum_Vitae.pdf
+cv_link: assets/files/curriculum_vitae.pdf
 github_link: https://github.com/
 linkedin: https://www.linkedin.com/
 twitter: https://twitter.com/
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avator.jpeg
+avatar: ./assets/img/avatar.png
 favicon: ./assets/img/favicon.png
 favicon_dark: ./assets/img/favicon-dark.png
+
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: true
+
+# Auto Dark Mode
+# You may use the option to disable the automatic dark theme
+auto_dark_mode: true
+
+# Font
+# You can use this option to choose between Serif or Sans Serif fonts.
+font: "Serif" # or "Sans Serif"
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
 google_analytics: UA-111540567-4
   ```
-### Editing `index.md`
+### Edit `index.md`
 
-Create `index.md` and add your personal information (e.g., publications, research).
+Create `index.md` and add your personal information. It supports **Markdown** and **HTML** syntax.
+
+### Edit included files
+
+There are two markdown files included in `index.md`. They are `_includes/publications.md` and `_includes/service.md`, respectively. These two files also support **Markdown** and **HTML** syntax. If you don't hope to include these two files, you may remove the following lines in `index.md`:
+https://github.com/yaoyao-liu/minimal-light/blob/b38070cd0b6bce45d8a885f3828549af8f82b7cb/index.md?plain=1#L21-L23
+
+If you hope to edit the publication list without changing the format, you may edit `_data/publications.yml`:
+https://github.com/yaoyao-liu/minimal-light/blob/77b1b3b31d4561091bcd739f37a2e1880e8b5ca5/_data/publications.yml#L3-L11
+
 
 ### Stylesheet
 
-If you'd like to add your own custom styles:
-
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-
-    ```scss
-    ---
-    ---
-
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+If you'd like to add your own custom styles, you may edit `_sass/minimal-light.scss`.
 
 ### Layouts
 
-If you'd like to change the theme's HTML layout:
-
-1. [Copy the original template](https://github.com/yaoyao-liu/minimal-light/blob/master/_layouts/homepage.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/homepage.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
+If you'd like to change the theme's HTML layout, you may edit `_layout/homepage.html`.
 
 ## License
 
@@ -157,21 +184,4 @@ Our project uses the source code from the following repositories:
 
 * [orderedlist/minimal](https://github.com/orderedlist/minimal)
 
-* [al-folio](https://github.com/alshedivat/al-folio) -->
-
-## Acknowledgements
-
-[![LICENSE](https://img.shields.io/github/license/yaoyao-liu/minimal-light?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/minimal-light/blob/main/LICENSE)
-
-This project mostly uses the source code from Yao Yao Liu's [minimal-light](https://github.com/yaoyao-liu/minimal-light.git) theme. We thank Yao Yao Liu for his great work and encourage everyone to try this theme.
-
-Our project uses the source code from the following repositories:
-
-* [minimal-light theme](https://github.com/yaoyao-liu/minimal-light.git)
-
-* [pages-themes/minimal](https://github.com/pages-themes/minimal)
-
-* [orderedlist/minimal](https://github.com/orderedlist/minimal)
-
 * [al-folio](https://github.com/alshedivat/al-folio)
-  
