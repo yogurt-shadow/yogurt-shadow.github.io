@@ -4,6 +4,7 @@ main:
     authors: <strong>Zhonghan Wang</strong>, Bohua Zhan*, Bohan Li, Shaowei Cai
     conference_short: VMCAI'2024
     conference: 25th International Conference on Verification, Model Checking, and Abstract Interpretation <strong>(VMCAI)</strong>, 2024.
+    website: https://popl24.sigplan.org/details/VMCAI-2024-papers/31/Efficient-Local-Search-for-Nonlinear-Real-Arithmetic
     pdf: assets/files/LS_NRA.pdf
     code: https://github.com/yogurt-shadow/LS_NRA
     # bibtex: https://bib.yliu.me/MICCAI23.txt
