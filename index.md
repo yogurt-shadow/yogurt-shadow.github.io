@@ -20,11 +20,6 @@ arithmetic. I studied optical devices and optical communication during bachelor 
 
 {% include_relative _includes/publications.md %}
 
-<!-- -**Efficient Local Search for Nonlinear Real Arithmetic** \
-**Zhonghan Wang**, Bohua Zhan\*, Bohan Li and Shaowei Cai.\
-*25th International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI'2024)*, London, UK. \
-[[pdf]](assets/files/LS_NRA.pdf)    [[code]](https://github.com/yogurt-shadow/LS_NRA) -->
-
 ## Publications [Bachelor, EE]
 ### Journal Papers
 

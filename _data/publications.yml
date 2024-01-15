@@ -7,9 +7,8 @@ main:
     website: https://popl24.sigplan.org/details/VMCAI-2024-papers/31/Efficient-Local-Search-for-Nonlinear-Real-Arithmetic
     pdf: assets/files/LS_NRA.pdf
     code: https://github.com/yogurt-shadow/LS_NRA
-    # bibtex: https://bib.yliu.me/MICCAI23.txt
     image: ./assets/img/vmcai1.png
-    # notes: Early Accept
+    slides: assets/files/LS_NRA_slides.pdf
 
   # - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
   #   authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
