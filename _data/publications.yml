@@ -4,19 +4,9 @@ main:
     authors: <strong>Zhonghan Wang</strong>, Bohua Zhan*, Bohan Li, Shaowei Cai
     conference_short: VMCAI'2024
     conference: 25th International Conference on Verification, Model Checking, and Abstract Interpretation <strong>(VMCAI)</strong>, 2024.
-    website: https://popl24.sigplan.org/details/VMCAI-2024-papers/31/Efficient-Local-Search-for-Nonlinear-Real-Arithmetic
+    website: https://link.springer.com/chapter/10.1007/978-3-031-50524-9_15
     pdf: assets/files/LS_NRA.pdf
     code: https://github.com/yogurt-shadow/LS_NRA
     image: ./assets/img/vmcai1.png
     slides: assets/files/LS_NRA_slides.pdf
-
-  # - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-  #   authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-  #   conference_short: CVPR
-  #   conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-  #   pdf: https://arxiv.org/pdf/2002.10211.pdf
-  #   code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-  #   page: https://class-il.mpi-inf.mpg.de/mnemonics/
-  #   bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-  #   notes: Oral Presentation
-  #   image: ./assets/img/teaser_example.png
+    video: assets/video/LS_NRA.mp4
