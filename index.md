@@ -1,18 +1,18 @@
 ---
 layout: homepage
 ---
-
 ## About Me
 
 This is Zhonghan Wang on the web! Currently I’m studying in State Key Lab of Computer Science, Institute of Software,
 Chinese Academy of Sciences. My research focused on satisfiablity modulos theory (SMT) solving on nonlinear real
 arithmetic. I studied optical devices and optical communication during bachelor school.
 
+## Research Interests ([Presentation](assets/files/Research_Work_Presentation.pdf))
 
-## Research Interests
 - **Constrant Solving:**  SMT for nonlinear real arithmetic (QF_NRA).
 
 ## Education
+
 - Master in Computer Science and Technology, Institute of Software, Chinese Academy of Sciences
 - Bachelor in Electronic Science and Technology, Nankai University
 
@@ -21,6 +21,7 @@ arithmetic. I studied optical devices and optical communication during bachelor 
 {% include_relative _includes/publications.md %}
 
 ## Publications [Bachelor, EE]
+
 ### Journal Papers
 
 -**Zhonghan Wang#**, Qiang Wang#, Xu Han, Yuxi Fang, Yuxuan He, Wenpu Geng, Zhongqi Pan, and Yang Yue*, "A Low-Cost
@@ -44,6 +45,7 @@ arithmetic. I studied optical devices and optical communication during bachelor 
       2020.
 
 ### Conference Papers
+
 -**Zhonghan Wang**, Qiang Wang, Xu Han, Yuxi Fang, Yuxuan He, Wenpu Geng, Zhongqi Pan, and Yang Yue*, "Lidar
       with Wavelength
       Division Multiplexed Laser Array and Polarization-Interleaved Grating Couplers," Frontiers in Optics (FiO), paper
@@ -86,4 +88,3 @@ arithmetic. I studied optical devices and optical communication during bachelor 
       Electro-Optics/Pacific Rim (CLEO/PR), paper C12H_3, Sydney, Australia, Aug. 2020.
 
 {% include_relative _includes/services.md %}
-
