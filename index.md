@@ -16,6 +16,21 @@ arithmetic. I studied optical devices and optical communication during bachelor 
 - Master in Computer Science and Technology, Institute of Software, Chinese Academy of Sciences
 - Bachelor in Electronic Science and Technology, Nankai University
 
+
+## Open Source Projects
+*[Z3 Plus Plus](https://z3-plus-plus.github.io/): Gold medal in SMT-COMP*  [code](https://github.com/z3-plus-plus/z3pp)
+- Implement sample-cell projection in Z3's Nlsat Solver
+- Implement feasible region checker to shortcut unsat instances
+
+*[Dynamic Variable Order of Nlsat]*(https://github.com/yogurt-shadow/z3-dnlsat)\
+- Introduce VSIDS dynamic branching heuristic into Nlsat Solver
+- Fasten solving procedure both on satisfiable and unsatisfiable instances
+
+*[Practice of CMU 15-424 (Logical Foundations of Cyber Physical Systems)](https://github.com/yogurt-shadow/CMU-15-424)*\
+- Use *KeymaeraX* to model and verify hybrid systems using dynamic differential logic (dℒ) interactively
+
+*[Practice of Concrete Semantics in Isabelle](https://github.com/yogurt-shadow/Isar_Exercise)*\
+
 ## Publications [Master, CS]
 
 {% include_relative _includes/publications.md %}
