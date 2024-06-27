@@ -146,7 +146,6 @@ __        __   _
         <hr size="1" color="#800000">
         <h2><b><a id="publications">Publications</a></b></h2>
         <h3>Conference Paper</h3>
-
         <div class="panel panel-default">
             <!--<div class="panel-body">-->
             <table class="table table-hover">
@@ -157,101 +156,44 @@ __        __   _
                     </td>
                     <td>
                         <h4 class="list-group-item-heading">
-                            Reconstructing Human Joint Motion with Computational Fabrics
-                            <span class="badge"><a class="conf" target="_blank" href="./files/ubicomp19-fabric.pdf">UbiComp '19</a></span>
+                            Efficient Local Search for Nonlinear Real Arithmetic
+                            <span class="badge"><a class="conf" target="_blank" href="./files2/LS_NRA.pdf">VMCAI'2024</a></span>
                         </h4>
                         <p class="author">
-                            Ruibo Liu, Qijia Shao, <strong>Siqi Wang</strong>, Christina Ru, Devin Balkcom, and Xia Zhou<br>
-                            Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies.<br>
-                            Presented at ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp), London, September 2019. <br>
+                            <strong>Zhonghan Wang</strong>, Bohua Zhan, Bohan Li, Shaowei Cai<br>
+                            25th International Conference on Verification, Model Checking, and Abstract Interpretation, London, January 2024. <br>
                         </p>
-                        <button type="button" class="btn btn-success btn-xs" data-target="#ubicomp19-abs" data-toggle="collapse">Abstract</button>
-                        <button type="button" class="btn btn-info btn-xs" data-target="#ubicomp19-bib" data-toggle="collapse">Bib</button>
-                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="./files/ubicomp19-fabric.pdf">PDF</a></button>
+                        <button type="button" class="btn btn-success btn-xs" data-target="#vmcai24-abs" data-toggle="collapse">Abstract</button>
+                        <button type="button" class="btn btn-info btn-xs" data-target="#vmcai24-bib" data-toggle="collapse">Bib</button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="./files2/LS_NRA.pdf">PDF</a></button>
+                        <button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href="./files2/LS_NRA_slides.pdf">Slides</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://youtu.be/CKGDRTXvKjk?si=wG_gdiOlZLmSyHl0">Video</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://github.com/yogurt-shadow/LS_NRA">Code</a></button>
+                        
                         <p></p>
-                        <div id="ubicomp19-abs" class="collapse">
-                            Accurate and continuous monitoring of joint rotational motion is crucial for a wide range of applications such as physical
-                            rehabilitation and motion training. Existing motion capture systems, however, either need instrumentation
-                            of the environment, or fail to track arbitrary joint motion, or impose wearing discomfort by requiring rigid electrical sensors
-                            right around the joint area. This work studies the use of everyday fabrics as a flexible and soft sensing medium to monitor joint
-                            angular motion accurately and reliably. Specifically we focus on the primary use of conductive stretchable fabrics to sense the
-                            skin deformation during joint motion and infer the joint rotational angle. We tackle challenges of fabric sensing originated
-                            by the inherent properties of elastic materials by leveraging two types of sensing fabric and characterizing their properties
-                            based on models in material science. We apply models from bio-mechanics to infer joint angles and propose the use of dual
-                            strain sensing to enhance sensing robustness against user diversity and fabric position offsets. We fabricate prototypes using
-                            off-the-shelf fabrics and micro-controller. Experiments with ten participants show 9.69&#176; median angular error in tracking
-                            joint angle and its sensing robustness across various users and activities.
+                        <div id="vmcai24-abs" class="collapse">
+                            Local search has recently been applied to SMT problems overvarious arithmetic theories. Among these, nonlinear real arithmetic posesspecial challenges due to its uncountable solution space and potentialneed to solve higher-degree polynomials. As a consequence, existing workon local search only considered fragments of the theory. In this work,we analyze the difficulties and propose ways to address them, resultingin an efficient search algorithm that covers the full theory of nonlinearreal arithmetic. In particular, we present two algorithmic improvements:incremental computation of variable scores and temporary relaxation ofequality constraints. We also discuss choice of candidate moves and alook-ahead mechanism in case when no critical moves are available. Theresulting implementation is competitive on satisfiable problem instancesagainst complete methods such as MCSAT in existing SMT solvers.
                         </div>
-                        <div id="ubicomp19-bib" class="collapse">
-                            @article{liu2019reconstructing,
-                            title={Reconstructing Human Joint Motion with Computational Fabrics},
-                            author={Liu, Ruibo and Shao, Qijia and Wang, Siqi and Ru, Christina and Balkcom, Devin and Zhou, Xia},
-                            journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
-                            volume={3},
-                            number={1},
-                            pages={19},
-                            year={2019},
-                            publisher={ACM}
+                        <div id="vmcai24-bib" class="collapse">
+                            @inproceedings{WZHNRA,
+                                author = {Wang, Zhonghan and Zhan, Bohua and Li, Bohan and Cai, Shaowei},
+                                title = {Efficient Local Search for Nonlinear Real Arithmetic},
+                                year = {2024},
+                                isbn = {978-3-031-50523-2},
+                                publisher = {Springer-Verlag},
+                                address = {Berlin, Heidelberg},
+                                url = {https://doi.org/10.1007/978-3-031-50524-9_15},
+                                doi = {10.1007/978-3-031-50524-9_15},
+                                abstract = {Local search has recently been applied to SMT problems over various arithmetic theories. Among these, nonlinear real arithmetic poses special challenges due to its uncountable solution space and potential need to solve higher-degree polynomials. As a consequence, existing work on local search only considered fragments of the theory. In this work, we analyze the difficulties and propose ways to address them, resulting in an efficient search algorithm that covers the full theory of nonlinear real arithmetic. In particular, we present two algorithmic improvements: incremental computation of variable scores and temporary relaxation of equality constraints. We also discuss choice of candidate moves and a look-ahead mechanism in case when no critical moves are available. The resulting implementation is competitive on satisfiable problem instances against complete methods such as MCSAT in existing SMT solvers.},
+                                booktitle = {Verification, Model Checking, and Abstract Interpretation: 25th International Conference, VMCAI 2024, London, United Kingdom, January 15-16, 2024, Proceedings, Part I},
+                                pages = {326-349},
+                                numpages = {24},
+                                keywords = {Local search, Nonlinear arithmetic, SMT},
+                                location = {London, United Kingdom}
                             }
                         </div>
                     </td>
                 </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <h3>Journal Article</h3>
-
-        <div class="panel panel-default">
-            <!--<div class="panel-body">-->
-            <table class="table table-hover">
-                <tbody>
-                    <tr>
-                        <td>
-                            <span class="label label-primary">J1</span>
-                        </td>
-                        <td>
-                            <h4 class="list-group-item-heading">
-                                A New Grid Structure for Adaptive and Anisotropic Fluid Simulation
-                                <!-- <span class="badge"><a class="conf" target="_blank" href="./documents/ubicomp19-fabric.pdf">TOG '19</a></span> -->
-                            </h4>
-                            <p class="author">
-                                Anonymous author(s)<br>
-                                ACM Transactions on Graphics (TOG), 2019. (Not submitted)<br>
-                            </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-
-        <h3>Thesis</h3>
-
-        <div class="panel panel-default">
-            <!--<div class="panel-body">-->
-            <table class="table table-hover">
-                <tbody>
-                    <tr>
-                        <td>
-                            <span class="label label-primary">T1</span>
-                        </td>
-                        <td>
-                            <h4 class="list-group-item-heading">
-                                Energy Blockchain Technology for the Sale of Electricity Market
-                            </h4>
-                            <p class="author">
-                                <strong>Siqi Wang</strong><br>
-                                Bachelor's thesis, Shanghai Jiao Tong University, 2019.<br>
-                            </p>                           
-                            <button type="button" class="btn btn-success btn-xs" data-target="#bachelor-thesis-abs" data-toggle="collapse">Abstract</button>
-                            <button type="button" class="btn btn-danger btn-xs"><a class="conf" target="_blank" href="./files/bachelor-slides.pdf">Defense Slides (Chinese)</a></button>
-                            <div id="bachelor-thesis-abs" class="collapse">
-                                With the proposal of "three types, two networks" in the report of State Grid on NPC &amp CPPCC 2019, the concept of "ubiquitous power Internet of things" has brought new opportunities for distributed power trading. Block chain technology, with its characteristics of information symmetry, security, transparency and trustworthiness, is of great significance to the construction of platform-based and sharing-based enterprises in the aspects of multi-party balance and information sharing. It overcomes the shortcomings of expandability, long transaction time and information symmetry in the traditional centralized power trading mode. To this end, this paper designs a transaction-driven, decentralized and autonomous power management mechanism in the sales park, implements a blockchain-based power trading model on Hyperledger Fabric, deploys corresponding smart contracts, and eventually establishes the blockchain-based decentralization technology for distribution network. We discuss the double auction and P2P trading mechanisms between users in the block, the power package agreement and access mechanism between power sales companies and users. Smart contract test on Hyperledger Fabric shows that the model built in this paper can realize the distributed energy transaction in the sales park and visualize the management and transaction process on webpage. The code of smart contract is interpreted in detail. The digitalized and decentralized mechanism for alliance chain assets is introduced into the park power management system to create an open and transparent power transaction market, which comprehensively improves trade efficiency and the overall benefit of traders.
-                            </div>
-                            <p></p>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </div>
