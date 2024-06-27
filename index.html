@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Siqi Wang‘s Homepage">
-    <meta name="author" content="Siqi Wang">
-    <link rel="icon" href="./files/nyu_icon.ico">
+    <meta name="description" content="Zhonghan Wang's Homepage">
+    <meta name="author" content="Zhonghan Wang">
+    <link rel="icon" href="./img/favicon.ico">
 
-    <title>Siqi Wang | NYU CS PhD</title>
+    <title>Zhonghan Wang's Homepage</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./files/bootstrap.min.css" rel="stylesheet">
@@ -199,7 +199,8 @@ __        __   _
         </div>
 
         <hr size="1" color="#800000">
-        <h2><b><a id="research">Research</a></b></h2>
+        <h2><b><a id="research">Research (Nonlinear Arithmetic Satisfiability Solving)</a></b></h2>
+        Generally speaking, my research includes designing both complete method (MCSAT) and incomplete method (Local Search) for SMT(NRA) solving (also called polynomial constraints). I like to borrow some innovative ideas from boolean satisfiability (SAT solving) into arithmetic satisfiability (SMT solving), by the conversion of boolean search space (2^n) to real search space (R^n, but well decomposed into sign-invariant cells).
 
         <!-- <li class="list-group-item"> -->
         <div class="panel panel-default">
@@ -211,14 +212,29 @@ __        __   _
                             <p></p>
                             <div class="row vert-offset-top-1 vert-offset-bottom-1">
                                 <div class="col-md-4">
-                                    <img src="./img/ASE2024_clauseSMT.jpg" class="img-thumbnail center-block" style="max-width:90%">
+                                    <img src="./img/z3pp.png" class="img-thumbnail center-block" style="max-width:90%">
                                 </div>
                                 <div class="col-md-75">
-                                    <p><b>OmniGrid – A New Grid Structure for Anisotropic Fluid</b><br>
-                                    <small>Dartmouth College & SJTU, advised by <a href="http://www.dartmouth.edu/~boolzhu/" target="_blank">Bo Zhu</a>  
-                                    and <a href="http://www.se.sjtu.edu.cn/teacher/teacherdetail.aspx?id=6" target="_blank">Xubo Yang</a></small><br>
-                                    <p style="text-align:justify; max-width:97%"><small>The primary challenge we are tackling is to devise a novel grid structure named OmniGrid that can capture and simulate complex anisotropic flow features. As we know, how to capture the strong flux exhibited in non-axis-aliened directions has long been a challenge in the area of fluid simulation. The key idea we develop in this approach is to overlap tilted cells co-located with grid nodes adaptively and dynamically. Our grid structure preserves almost all the merits of a uniform Cartersian grid, including the cache-coherent data layout, the easiness for parallelization, and the existence of high-performance numerical solvers.
-                                            Also, this grid can be seamlessly integrated into other adaptive grid structures.</small></p>
+                                    <p><b>Portfolio: <a href="https://z3-plus-plus.github.io/" target="_blank">Z3-Plus-Plus in SMT-COMP (NRA Track)</a></b><br>
+                                    <!-- <small>Dartmouth College & SJTU, advised by <a href="http://www.dartmouth.edu/~boolzhu/" target="_blank">Bo Zhu</a>  
+                                    and <a href="http://www.se.sjtu.edu.cn/teacher/teacherdetail.aspx?id=6" target="_blank">Xubo Yang</a></small><br> -->
+                                    <p style="text-align:justify; max-width:97%"><small>
+                                        We noticed that the order of variables to be assigned greatly
+                                        affects the performance on many instances, so we employ different solving flows,
+                                        mainly including various heuristic arithmetic variable reordering strategies from
+                                        CAD. Also, as DPLL(T) framework works particularly well for multilinear instances,
+                                        we extend the time limit of DPLL(T) for such instances.
+                                        As for NRA theory solving, we implement sample-cell projection in NLSAT
+                                        explain module. Although the new operator is also a CAD-like projection operator
+                                        which computes the cell (not necessarily cylindrical) containing a given
+                                        sample such that each polynomial from the problem is sign-invariant on the cell,
+                                        it is of singly exponential time complexity.
+                                        Also we implement a feasible region consistency checker for clauses which
+                                        are univariate and unit before the main search. The checker obtains the feasible
+                                        region of variables through real root isolation and continuously takes the intersection
+                                        of the regions. If the feasible region of some variable becomes empty, it
+                                        means the instance is unsatisfiable. Otherwise, the obtained feasible regions are
+                                        added to the instance as lemmas.</small></p>
                                 </div>
                             </div>
                         </td>
@@ -228,12 +244,44 @@ __        __   _
                             <p></p>
                             <div class="row vert-offset-top-1 vert-offset-bottom-1">
                                 <div class="col-md-4">
-                                    <img src="./img/z3pp.png" class="img-thumbnail center-block" style="max-width:90%">
+                                    <img src="./img/vmcai1.png" class="img-thumbnail center-block" style="max-width:90%">
                                 </div>
                                 <div class="col-md-75">
-                                    <p><b>Reconstructing Human Joint Motion with Computational Fabrics</b><br>
-                                    <small>Dartmouth College, advised by <a href="https://home.cs.dartmouth.edu/~xia/" target="_blank">Xia Zhou</a></small> 
-                                    <p style="text-align:justify; max-width:97%"><small>This work studies the use of everyday fabrics as a flexible and soft sensing medium to monitor joint angular motion accurately and reliably. Specifically we focus on the primary use of conductive stretchable fabrics to sense the skin deformation during joint motion and infer the joint rotational angle. We tackle challenges of fabric sensing originated by the inherent properties of elastic materials by leveraging two types of sensing fabric and characterizing their properties based on models in material science. We apply models from bio-mechanics to infer joint angles and propose the use of dual strain sensing to enhance sensing robustness against user diversity and fabric position offsets. We fabricate prototypes using off-the-shelf fabrics and micro-controller. Experiments with ten participants show 9.69&#176; mean angular error in tracking joint angle and its sensing robustness across various users and activities.</small></p>
+                                    <p><b>Incomplete Method: Local Search for SMT(NRA) Solving</b><br>
+                                    <p style="text-align:justify; max-width:97%"><small>Local search has recently been applied to SMT problems overvarious arithmetic theories. Among these, nonlinear real arithmetic posesspecial challenges due to its uncountable solution space and potentialneed to solve higher-degree polynomials. As a consequence, existing workon local search only considered fragments of the theory. In this work,we analyze the difficulties and propose ways to address them, resultingin an efficient search algorithm that covers the full theory of nonlinearreal arithmetic. In particular, we present two algorithmic improvements:incremental computation of variable scores and temporary relaxation ofequality constraints. We also discuss choice of candidate moves and alook-ahead mechanism in case when no critical moves are available. Theresulting implementation is competitive on satisfiable problem instancesagainst complete methods such as MCSAT in existing SMT solvers.</small></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p></p>
+                            <div class="row vert-offset-top-1 vert-offset-bottom-1">
+                                <div class="col-md-4">
+                                    <img src="./img/ASE2024_clauseSMT.jpg" class="img-thumbnail center-block" style="max-width:90%">
+                                </div>
+                                <div class="col-md-75">
+                                    <p><b>Complete Method: Improving MCSAT for SMT(NRA) Solving</b><br>
+                                    <p style="text-align:justify; max-width:97%"><small>Model-constructing satisfiability calculus (MCSAT) framework has
+                                        been applied to SMT problems on different arithmetic theories. NLSAT,
+                                        an implementation using cylindrical algebraic decomposition
+                                        for explanation, is especially competitive among nonlinear real
+                                        arithmetic constraints. However, current Conflict-Driven Clause
+                                        Learning (CDCL)-style algorithms only consider literal information
+                                        for decision, and thus ignore clause-level influence on arithmetic
+                                        variables. As a consequence, NLSAT encounters unnecessary conflicts
+                                        caused by improper literal decisions.
+                                        In this work, we analyze the literal decision caused conflicts,
+                                        and introduce clause-level information with a direct effect on arithmetic
+                                        variables. Two main algorithm improvements are presented:
+                                        clause-level feasible set based look-ahead mechanism and arithmetic
+                                        propagation based branching heuristic. We implement our
+                                        solver named clauseSMT on our dynamic variable ordering framework.
+                                        Experiments show that clauseSMT is competitive on nonlinear
+                                        real arithmetic theory against existing SMT solvers (CVC5, Z3,
+                                        YICES2), and outperforms all these solvers on satisfiable instances
+                                        of SMT(QF_NRA) in SMT-LIB. The effectiveness of our proposed
+                                        methods are also studied.</small></p>
                                 </div>
                             </div>
                         </td>
@@ -246,9 +294,26 @@ __        __   _
                                     <img src="./img/dnlsat.png" class="img-thumbnail center-block" style="max-width:90%">
                                 </div>
                                 <div class="col-md-75">
-                                    <p><b>Reconstructing Human Joint Motion with Computational Fabrics</b><br>
-                                    <small>Dartmouth College, advised by <a href="https://home.cs.dartmouth.edu/~xia/" target="_blank">Xia Zhou</a></small> 
-                                    <p style="text-align:justify; max-width:97%"><small>This work studies the use of everyday fabrics as a flexible and soft sensing medium to monitor joint angular motion accurately and reliably. Specifically we focus on the primary use of conductive stretchable fabrics to sense the skin deformation during joint motion and infer the joint rotational angle. We tackle challenges of fabric sensing originated by the inherent properties of elastic materials by leveraging two types of sensing fabric and characterizing their properties based on models in material science. We apply models from bio-mechanics to infer joint angles and propose the use of dual strain sensing to enhance sensing robustness against user diversity and fabric position offsets. We fabricate prototypes using off-the-shelf fabrics and micro-controller. Experiments with ten participants show 9.69&#176; mean angular error in tracking joint angle and its sensing robustness across various users and activities.</small></p>
+                                    <p><b>DNLSAT: A Dynamic Variable Ordering MCSAT Framework for
+                                        Nonlinear Real Arithmetic</b><br>
+                                    <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://youtu.be/T2Z0gZQjnPw">Demonstration Video</a></button>
+                                    <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://github.com/yogurt-shadow/dnlsat/tree/master/code">Code</a></button>
+                                    
+                                    <p style="text-align:justify; max-width:97%"><small>Satisfiability modulo nonlinear real arithmetic theory (SMT(NRA))
+                                        solving is essential to multiple applications, including program verification,
+                                        program synthesis and software testing. In this context,
+                                        recently model constructing satisfiability calculus (MCSAT) has
+                                        been invented to directly search for models in the theory space. Although
+                                        following papers discussed practical directions and updates
+                                        on MCSAT, less attention has been paid to the detailed implementation.
+                                        In this paper, we present an efficient implementation of
+                                        dynamic variable orderings of MCSAT, called dnlsat.We show carefully
+                                        designed data structures and promising mechanisms, such
+                                        as branching heuristic, restart, and lemma management. Besides,
+                                        we also give a theoretical study of potential influences brought by
+                                        the dynamic variablr ordering. The experimental evaluation shows
+                                        that dnlsat accelerates the solving speed and solves more satisfiable
+                                        instances than other state-of-the-art SMT solvers.</small></p>
                                 </div>
                             </div>
                         </td>
@@ -264,23 +329,17 @@ __        __   _
         <div class="row">
             <div class="col-xs-2 col-md-2"><p align="center">
                 <strong>
-                    08/2019<br>
-                    05/2019<br>
-                    12/2018<br>
-                    04/2018<br>
-                    10/2017<br><br>
-                    10/2016<br>
-                    09/2014<br>
+                    2023<br>
+                    2022 <br>
+                    2022 <br>
+                    2018<br>
                 </strong></p>
             </div>
             <div class="col-xs-18 col-md-15" style="margin-right: 5px"><p>
-                New York University MacCracken Fellowship<br>
-                Outstanding Graduates of Shanghai<br>
-                Hongyi Scholarship (for excellent overseas researchers)<br>
-                First-class Scholarship of Lee Fushou Fund<br>
-                Scholarship of the Temasek Foundation International Leadership Enrichment and Regional Networking Programme (TFI LEaRN)<br>
-                Award for Outstanding Student Cadres<br>
-                First-Prize in High School Students Mathematics Contest in China (provincial level)
+                Second class Academic Scholarship<br>
+                Second class Academic Scholarship<br>
+                Two gold medals of Z3++ in SMT-COMP (main developer)<br>
+                Outstanding Prize for Tianjin College Student Mathematical Competition (Ranked 17)
             </p></div>
         </div>
 
@@ -288,36 +347,11 @@ __        __   _
         <h2><b><a name="misc">Misc</a></b></h2>
 
         <!-- <p>I love photography and traveling. I own a Nikon D750 body. My current lens collection includes a Rokinon 14mm f/2.8, a Sigma 35mm f/1.4 Art, a Nikon 50mm f/1.4 D, a Nikon 85mm f/1.8 D, a Tokina AT-X 100mm f/2.8 macro, and a Nikon 18-35mm f/3.5-4.5 zoom. Read <a target="_blank" href="http://zwyuan.github.io/2017/12/31/my-memories-of-the-year-2017-in-photos/">my pick of photos in 2017</a> or see more of the photos I took at <a target="_blank" href="https://500px.com/zwyuan">my 500px photo gallery</a>, and images available for licensing on <a href="https://www.gettyimages.com/search/photographer?family=creative&amp;photographer=edward%20yuan&amp;sort=best">Getty Images</a>.</p> -->
-        <p>I am a fan of classical music and play the piano in my leisure time.
-            I'm also well-versed in Cucurbit Flute, a Chinese musical instrument.
-            I learned Chinese folk dance for many years but it's been quite a long time since I last danced.</p>
-        <p>
-            My first name is pronouced as "Si--Chi" and the last Chinese character is the one with same meaning as "Chess".
+        <p>During my undergraduate study, I learnt about electronic science and did research in optical communications and devices.
+            I changed my subject and direction when I went to graduate school, and now I am focusing on SMT solving and formal verification. Besides, I chose to stay in 
+            my country due to COVID-19. Sometimes we don't know where to go and what we will do, but the story is still going on.
         </p>
-        <p id="phd-day-count">It's been 1470 days since I started Ph.D.!<br>
-
-        <script>
-        var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
-
-        function countup(yr,m,d){
-        var today=new Date()
-        var todayy=today.getYear()
-        if (todayy < 1000)
-        todayy+=1900
-        var todaym=today.getMonth()
-        var todayd=today.getDate()
-        var todaystring=montharray[todaym]+" "+todayd+", "+todayy
-        var paststring=montharray[m-1]+" "+d+", "+yr
-        var difference="It's been " + (Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1) + " days since I started Ph.D.!<br>"
-            document.getElementById('phd-day-count').value = difference
-            document.getElementById('phd-day-count').innerHTML = difference
-        }
-        //enter the count up date using the format year/month/day
-        countup(2019,09,03)
-        </script>
-
-        <!-- Oh, and please REMOVE or REPLACE this counter as well :) -->
-        <!-- <p> -->
+        <p>
             You are the No. <a href="https://www.easycounter.com/">
                 <img src="https://www.easycounter.com/counter.php?siqi9794"
                 border="0" alt="HTML Hit Counters"></a> th vistor of my homepage.
@@ -337,7 +371,7 @@ __        __   _
                     var lastModTime = new Date(document.lastModified);
                     document.write("Last Modified: "+lastModTime)
                 </script><br>
-                This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> License and modified from <a href="http://web.cs.ucla.edu/~zyuan/">Zengwen Yuan's Homepage</a>.                
+                This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> License and modified from <a href="https://cs.nyu.edu/~sw4429/">Siqi Wang's Homepage</a>.                
             </small></small>   
         </p>
 
