@@ -198,6 +198,122 @@ __        __   _
             </table>
         </div>
 
+        <h3>Preprint</h3>
+        <div class="panel panel-default">
+            <!--<div class="panel-body">-->
+            <table class="table table-hover">
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="label label-primary">P1</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                            clauseSMT: A NLSAT-Based Clause-Level Framework for Satisfiability Modulo Nonlinear Real Arithmetic Theory
+                            <span class="badge"><a class="conf" target="_blank" href="./files2/clauseSMT_preprint.pdf">arXiv</a></span>
+                        </h4>
+                        <p class="author">
+                            <strong>Zhonghan Wang</strong><br>
+                            arXiv preprint arXiv:2406.02122, 2024. <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs" data-target="#clauseSMT-abs" data-toggle="collapse">Abstract</button>
+                        <button type="button" class="btn btn-info btn-xs" data-target="#clauseSMT-bib" data-toggle="collapse">Bib</button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="./files2/clauseSMT_preprint.pdf">PDF</a></button>
+                        <p></p>
+                        <div id="clauseSMT-abs" class="collapse">
+                            Model-constructing satisfiability calculus (MCSAT) framework has
+                            been applied to SMT problems on different arithmetic theories. NLSAT,
+                            an implementation using cylindrical algebraic decomposition
+                            for explanation, is especially competitive among nonlinear real
+                            arithmetic constraints. However, current Conflict-Driven Clause
+                            Learning (CDCL)-style algorithms only consider literal information
+                            for decision, and thus ignore clause-level influence on arithmetic
+                            variables. As a consequence, NLSAT encounters unnecessary conflicts
+                            caused by improper literal decisions.
+
+                            In this work, we analyze the literal decision caused conflicts,
+                            and introduce clause-level information with a direct effect on arithmetic variables. Two main algorithm improvements are presented:
+                            clause-level feasible set based look-ahead mechanism and arithmetic
+                            propagation based branching heuristic. We implement our
+                            solver named clauseSMT on our dynamic variable ordering framework.
+                            Experiments show that clauseSMT is competitive on nonlinear
+                            real arithmetic theory against existing SMT solvers (CVC5, Z3,
+                            YICES2), and outperforms all these solvers on satisfiable instances
+                            of SMT(QF_NRA) in SMT-LIB. The effectiveness of our proposed
+                            methods are also studied.
+                        </div>
+                        <div id="clauseSMT-bib" class="collapse">
+                            @misc{wang2024clausesmtnlsatbasedclauselevelframework,
+                                title={clauseSMT: A NLSAT-Based Clause-Level Framework for Satisfiability Modulo Nonlinear Real Arithmetic Theory}, 
+                                author={Zhonghan Wang},
+                                year={2024},
+                                eprint={2406.02122},
+                                archivePrefix={arXiv},
+                                primaryClass={cs.SC},
+                                url={https://arxiv.org/abs/2406.02122}, 
+                          }
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="panel panel-default">
+            <!--<div class="panel-body">-->
+            <table class="table table-hover">
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="label label-primary">P2</span>
+                    </td>
+                    <td>
+                        <h4 class="list-group-item-heading">
+                            DNLSAT: A Dynamic Variable Ordering MCSAT Framework for Nonlinear Real Arithmetic
+                            <span class="badge"><a class="conf" target="_blank" href="./files2/dnlsat_preprint.pdf">arXiv</a></span>
+                        </h4>
+                        <p class="author">
+                            <strong>Zhonghan Wang</strong><br>
+                            arXiv preprint arXiv:2406.18964, 2024. <br>
+                        </p>
+                        <button type="button" class="btn btn-success btn-xs" data-target="#dnlsat-abs" data-toggle="collapse">Abstract</button>
+                        <button type="button" class="btn btn-info btn-xs" data-target="#dnlsat-bib" data-toggle="collapse">Bib</button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="./files2/dnlsat_preprint.pdf">PDF</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://youtu.be/T2Z0gZQjnPw">Demonstration Video</a></button>
+                        <button type="button" class="btn btn-primary btn-xs"><a class="conf" target="_blank" href="https://github.com/yogurt-shadow/dnlsat/tree/master/code">Code</a></button>
+                        <p></p>
+                        <div id="dnlsat-abs" class="collapse">
+                            Satisfiability modulo nonlinear real arithmetic theory (SMT(NRA))
+                            solving is essential to multiple applications, including program verification,
+                            program synthesis and software testing. In this context,
+                            recently model constructing satisfiability calculus (MCSAT) has
+                            been invented to directly search for models in the theory space. Although
+                            following papers discussed practical directions and updates
+                            on MCSAT, less attention has been paid to the detailed implementation.
+                            In this paper, we present an efficient implementation of
+                            dynamic variable orderings of MCSAT, called dnlsat.We show carefully
+                            designed data structures and promising mechanisms, such
+                            as branching heuristic, restart, and lemma management. Besides,
+                            we also give a theoretical study of potential influences brought by
+                            the dynamic variablr ordering. The experimental evaluation shows
+                            that dnlsat accelerates the solving speed and solves more satisfiable instances than other state-of-the-art SMT solvers.
+                        </div>
+                        <div id="dnlsat-bib" class="collapse">
+                            @misc{wang2024dnlsatdynamicvariableordering,
+                                title={DNLSAT: A Dynamic Variable Ordering MCSAT Framework for Nonlinear Real Arithmetic}, 
+                                author={Zhonghan Wang},
+                                year={2024},
+                                eprint={2406.18964},
+                                archivePrefix={arXiv},
+                                primaryClass={cs.SC},
+                                url={https://arxiv.org/abs/2406.18964}, 
+                          }
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
         <hr size="1" color="#800000">
         <h2><b><a id="research" href="./files2/Research_Work_Presentation_2_0.pdf" target="_blank">Research (Nonlinear Arithmetic Satisfiability Solving)</a></b></h2>
         Generally speaking, my research includes designing both complete method (MCSAT) and incomplete method (Local Search) for SMT(NRA) solving (also called polynomial constraints). I like to borrow some innovative ideas from boolean satisfiability (SAT solving) into arithmetic satisfiability (SMT solving), by the conversion of boolean search space (2^n) to real search space (R^n, but well decomposed into sign-invariant cells).
