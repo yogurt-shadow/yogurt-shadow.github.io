@@ -1,2 +1,2 @@
-# rachaelwang.github.io
-Siqi Wang's Homepage 
+# yogurt-shadow.github.io
+Zhonghan Wangs's personal website
