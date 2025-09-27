@@ -1,18 +1,21 @@
 #!/bin/bash
-# blog/new_post.sh
+# 创建新文章的脚本
 # 用法: ./new_post.sh "文章标题"
-# 仅创建新文章的 Markdown 文件
 
 TITLE="$1"
 if [ -z "$TITLE" ]; then
-    echo "Usage: $0 \"Post Title\""
+    echo "用法: $0 \"文章标题\""
     exit 1
 fi
 
-HEXODIR="$(cd "$(dirname "$0")"; pwd)"
-cd "$HEXODIR" || exit 1
+echo "=== 创建新文章: $TITLE ==="
 
-echo "Creating new post Markdown: $TITLE"
+# 进入blog目录
+cd "$(dirname "$0")" || exit 1
+
+# 创建新文章
 hexo new "$TITLE"
 
-echo "Done! Edit the Markdown file in 'source/_posts/' before generating."
+echo "✓ 文章已创建"
+echo "请编辑文件: source/_posts/$TITLE.md"
+echo "编辑完成后运行: ./deploy.sh 来部署"

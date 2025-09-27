@@ -1,38 +1,36 @@
 ---
 title: Hello World
+date: 2025-09-28 10:00:00
+tags: [welcome, blog]
+categories: [General]
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+
+# Welcome to My Blog
+
+This is my first blog post using Hexo with the Minimalism theme.
+
+## About This Blog
+
+This blog will cover topics related to:
+
+- Formal Methods
+- SMT Solving
+- Automated Reasoning
+- AI-assisted Verification
 
 ## Quick Start
 
-### Create a new post
+Here are some useful commands:
 
-``` bash
-$ hexo new "My New Post"
+```bash
+# Create a new post
+hexo new "My New Post"
+
+# Generate static files
+hexo generate
+
+# Start local server
+hexo server
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+More info: [Hexo Documentation](https://hexo.io/docs/)
