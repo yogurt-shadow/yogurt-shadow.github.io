@@ -10,11 +10,15 @@ site:
   language: "en"
   timezone: ""
 
+# 网站图标
+favicon: /blog/favicon.ico
+
 # 导航栏
 menu:
   Home: /
   Archives: /archives
   About: /about
+  Tags: /tags
 
 # 社交链接
 social:
