@@ -18,15 +18,15 @@ menu:
   Index:
     url: /
     External: false
-    name: 首页
+    name: Home
   Tags:
     url: /tags
     External: false
-    name: 标签
+    name: Tags
   Archives:
     url: /archives
     External: false
-    name: 归档
+    name: Archives
 
 # 联系方式
 contact:
