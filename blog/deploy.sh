@@ -40,7 +40,7 @@ else
     echo "✗ 主页面部署失败"
 fi
 
-if [ -d "css" ]; then
+if [ -d "style" ]; then
     echo "✓ CSS文件部署成功"
 else
     echo "✗ CSS文件部署失败"
