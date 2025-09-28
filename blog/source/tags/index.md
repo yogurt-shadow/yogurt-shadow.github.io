@@ -1,9 +1,9 @@
 ---
-title: 标签
+title: Tags
 date: 2025-09-28 10:00:00
 type: tags
 ---
 
-# 标签
+# Tags
 
-本博客使用的所有标签。
+All tags used in this blog.
