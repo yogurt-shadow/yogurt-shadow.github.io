@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Menu</title>
+    <style>
+        .menu-container {
+            display: flex;
+            position: fixed;
+            top: 56px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .menu-switch {
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .menu-list {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu {
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 22px;
+            margin: 16px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-header">
+        <div class="right">
+            <i class="icon menu-switch icon-menu-outline">☰</i>
+        </div>
+    </div>
+    
+    <div class="menu-container">
+        <nav class="menu-list">
+            <a href="/" class="menu">首页</a>
+            <a href="/tags" class="menu">标签</a>
+            <a href="/archives" class="menu">归档</a>
+            <a href="/about" class="menu">关于</a>
+        </nav>
+    </div>
+
+    <script>
+        document.querySelector('.menu-switch').addEventListener('click', function() {
+            const menuContainer = document.querySelector('.menu-container');
+            
+            if (this.classList.contains('icon-menu-outline')) {
+                this.classList.replace('icon-menu-outline', 'icon-close-outline');
+                menuContainer.style.opacity = '1';
+                menuContainer.style.height = 'auto';
+                menuContainer.style['z-index'] = '1024';
+            } else {
+                this.classList.replace('icon-close-outline', 'icon-menu-outline');
+                menuContainer.style.opacity = '0';
+                menuContainer.style['z-index'] = '0';
+                
+                setTimeout(() => {
+                    if (this.classList.contains('icon-menu-outline')) {
+                        menuContainer.style.height = '0';
+                    }
+                }, 600);
+            }
+        });
+    </script>
+</body>
+</html>
