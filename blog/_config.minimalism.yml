@@ -15,16 +15,36 @@ favicon: /blog/favicon.ico
 
 # 导航栏
 menu:
-  Home: /
-  Archives: /archives
-  About: /about
-  Tags: /tags
+  Index:
+    url: /
+    External: false
+    name: 首页
+  Tags:
+    url: /tags
+    External: false
+    name: 标签
+  Archives:
+    url: /archives
+    External: false
+    name: 归档
+  About:
+    url: /about
+    External: false
+    name: 关于
 
-# 社交链接
-social:
-  GitHub: https://github.com/yogurt-shadow
-  LinkedIn: https://www.linkedin.com/in/zhonghan-wang-12503a2a4/
-  Google Scholar: https://scholar.google.com/citations?user=1ug9HrQAAAAJ&hl=en
+# 联系方式
+contact:
+  github: "https://github.com/yogurt-shadow"
+  linkedin: "https://www.linkedin.com/in/zhonghan-wang-12503a2a4/"
+  email: "zhece.wang@mail.utoronto.ca"
+
+# 首页头像图片
+avatar: /blog/images/avatar.png
+
+# 深色主题
+dark_theme:
+  enable: true
+  mode: auto
 
 # 页脚
 footer:
