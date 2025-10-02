@@ -3,6 +3,7 @@ title: test-script
 date: 2025-09-28 08:03:31
 tags: [blog]
 categories: [General]
+img: https://yogurt-shadow.github.io/blog/images/image.png
 ---
 
 # test-script

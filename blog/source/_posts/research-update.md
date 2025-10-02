@@ -3,6 +3,7 @@ title: Research Update - SMT Solving
 date: 2025-09-28 11:00:00
 tags: [research, SMT, formal methods]
 categories: [Research]
+img: https://yogurt-shadow.github.io/blog/images/image.png
 ---
 
 # Research Update: Improving NLSAT for Nonlinear Real Arithmetic
