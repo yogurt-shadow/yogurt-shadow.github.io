@@ -1,9 +1,6 @@
 ---
 title: Tags
-date: 2025-09-28 10:00:00
+date: 2025-10-02 14:48:21
 type: tags
+layout: tags
 ---
-
-# Tags
-
-All tags used in this blog.
