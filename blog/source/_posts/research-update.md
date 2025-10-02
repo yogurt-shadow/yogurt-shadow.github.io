@@ -12,8 +12,6 @@ img: https://yogurt-shadow.github.io/blog/images/image.png
 
 My recent work focuses on improving NLSAT (Nonlinear Real Arithmetic) solving techniques, particularly in the context of SMT solving.
 
-![Research Image](https://yogurt-shadow.github.io/blog/images/image.png)
-
 ## Key Contributions
 
 1. **Clause-level Decision Strategies**: Developed new strategies for NLSAT that improve solver efficiency on SMT-LIB benchmarks.

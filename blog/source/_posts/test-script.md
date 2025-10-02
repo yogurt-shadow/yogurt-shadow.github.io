@@ -10,8 +10,6 @@ img: https://yogurt-shadow.github.io/blog/images/image.png
 
 在这里开始写你的文章内容...
 
-![Test Image](https://yogurt-shadow.github.io/blog/images/image.png)
-
 ## 概述
 
 在这里写文章的概述。
