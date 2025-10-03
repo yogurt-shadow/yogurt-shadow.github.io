@@ -103,3 +103,12 @@ theme: minimalism
 # Docs: https://hexo.io/docs/one-command-deployment.html
 deploy:
   type: ''
+
+# Local search database (generate search.json)
+search:
+  path: search.json
+  field: post
+  format: json
+search_index:
+  path: search.json
+  format: json

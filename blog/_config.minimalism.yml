@@ -32,7 +32,7 @@ menu:
 contact:
   github: "https://github.com/yogurt-shadow"
   linkedin: "https://www.linkedin.com/in/zhonghan-wang-12503a2a4/"
-  email: "zhece.wang@mail.utoronto.ca"
+  email: "mailto:zhece.wang@mail.utoronto.ca"
 
 # 首页头像图片
 avatar: /images/avatar.png
@@ -65,7 +65,8 @@ theme:
 # 搜索功能
 search:
   enable: true
-  path: search.xml
+  type: json
+  path: search.json
   field: post
 
 # 评论系统 (可选)
