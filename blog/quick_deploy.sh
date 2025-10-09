@@ -4,34 +4,34 @@
 
 COMMIT_MSG="${1:-Update blog}"
 
-echo "=== 快速部署博客 ==="
+echo "=== Fast Blog Deployment ==="
 
 # 进入blog目录
 cd "$(dirname "$0")" || exit 1
 
-# 1. 生成静态文件
-echo "1. 生成静态文件..."
+# 1. Generate static files
+echo "1. Generating static files..."
 hexo clean
 hexo generate
 
-# 1.5 修正缩略图
-echo "1.5. 修正缩略图..."
+# 1.5 Fix thumbnails
+echo "1.5. Fixing thumbnails..."
 python3 tools/fix-thumbnails.py || python tools/fix-thumbnails.py
 
-# 2. 复制到blog目录
-echo "2. 复制文件..."
+# 2. Copy to blog directory
+echo "2. Copying files..."
 cp -r public/* ./
 
-# 3. 提交到Git
-echo "3. 提交到Git..."
+# 3. Commit to Git
+echo "3. Committing to Git..."
 cd ..
 git add .
 git commit -m "$COMMIT_MSG"
 
-# 4. 推送到GitHub
-echo "4. 推送到GitHub..."
+# 4. Push to GitHub
+echo "4. Pushing to GitHub..."
 git push origin master
 
 echo ""
-echo "=== 部署完成 ==="
-echo "博客已更新: https://yogurt-shadow.github.io/blog/"
+echo "=== Deployment completed ==="
+echo "Blog updated: https://yogurt-shadow.github.io/blog/"
