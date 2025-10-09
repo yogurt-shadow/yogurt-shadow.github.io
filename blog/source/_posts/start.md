@@ -3,7 +3,7 @@ title: 一切的开始：为什么要搭一个 Blog 💻
 date: 2025-09-28 08:03:31
 tags: [blog]
 categories: [General]
-img: https://yogurt-shadow.github.io/blog/images/start2.jpg
+img: https://yogurt-shadow.github.io/blog/images/start.jpg
 ---
 
 # 一切的开始：为什么要搭一个 Blog 💻
