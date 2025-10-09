@@ -3,7 +3,7 @@ title: start
 date: 2025-09-28 08:03:31
 tags: [blog]
 categories: [General]
-img: https://yogurt-shadow.github.io/blog/images/image.png
+img: https://yogurt-shadow.github.io/blog/images/start2/jpg
 ---
 
 # 一切的开始...为什么要整一个 Blog 😎
@@ -31,3 +31,5 @@ img: https://yogurt-shadow.github.io/blog/images/image.png
 很多日子会远去，但当时那个“傻乎乎、却很真的自己”，值得被留下。等以后回头看看，会觉得：啊，这就是我走过的路呀。✨
 
 如果你也刚好路过，希望这些文字能给你一点点陪伴；如果你正卡在迷雾里，别怕，我们慢慢走。🌟
+
+最后小声说一句：本博客有不少帖子由 Cursor 帮我润色，风格会尽量保持统一哒～(＾▽＾)／
