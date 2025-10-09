@@ -4,11 +4,9 @@ from pathlib import Path
 
 
 def force_light_in_html(public_dir: Path) -> int:
-    replaced = 0
-    pattern = re.compile(r"<script>!function\(\)\{var e=window\.matchMedia&&window\.matchMedia\(\(\"prefers-color-scheme: dark\"\)\)\.matches,t=localStorage\.getItem\(\"use-color-scheme\"\)\|\|\"auto\";\(\"dark\"===t\|\|e&&\"light\"!==t\)&&document\.documentElement\.classList\.toggle\(\"dark\",!0\)\}\<\)/script>")
-    # Use a more lenient pattern due to minified differences
-    fuzzy = re.compile(r"<script>!function\(\)\{var e=window\.matchMedia[\s\S]*?document\.documentElement\.classList\.toggle\(\"dark\",!0\)\}\(\)\)</script>")
-    replacement = '<script>document.documentElement.classList.remove("dark");try{localStorage.setItem("use-color-scheme","light")}catch(e){}</script>'
+    updated = 0
+    injection = '\n<script>try{localStorage.setItem("use-color-scheme","light");}catch(e){};document.documentElement.classList.remove("dark");</script>\n'
+    head_close_re = re.compile(r"</head>", re.IGNORECASE)
 
     for html_path in public_dir.rglob("*.html"):
         try:
@@ -16,14 +14,19 @@ def force_light_in_html(public_dir: Path) -> int:
         except Exception:
             continue
 
-        new_html = fuzzy.sub(replacement, html)
-        if new_html != html:
+        # If already contains our injection, skip
+        if 'localStorage.setItem("use-color-scheme","light")' in html:
+            continue
+
+        # Insert just before </head>
+        new_html, count = head_close_re.subn(injection + '</head>', html, count=1)
+        if count:
             try:
                 html_path.write_text(new_html, encoding="utf-8")
-                replaced += 1
+                updated += 1
             except Exception:
                 pass
-    return replaced
+    return updated
 
 
 def main() -> int:
