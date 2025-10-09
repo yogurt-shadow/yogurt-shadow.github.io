@@ -14,6 +14,10 @@ echo "1. 生成静态文件..."
 hexo clean
 hexo generate
 
+# 1.5 修正缩略图
+echo "1.5. 修正缩略图..."
+python3 scripts/fix-thumbnails.py || python scripts/fix-thumbnails.py
+
 # 2. 复制到blog目录
 echo "2. 复制文件..."
 cp -r public/* ./
