@@ -6,8 +6,6 @@ categories: [General]
 img: https://yogurt-shadow.github.io/blog/images/start.jpg
 ---
 
-# 一切的开始：为什么要搭一个 Blog 💻
-
 先记个时间点：最初发布时间 2025/09/28（测试），现在更新至 2025/10/09。作为一个计算机方向的读博生，我更习惯把问题“结构化”：信息沉淀、可搜索、可复用、可迭代。这些属性决定了我需要一个稳定、可控的输出场所，于是就有了这个 Blog。🚀
 
 ## Why Blog on WebPage?
