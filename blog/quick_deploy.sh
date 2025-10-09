@@ -18,6 +18,10 @@ hexo generate
 echo "1.5. Fixing thumbnails..."
 python3 tools/fix-thumbnails.py || python tools/fix-thumbnails.py
 
+# 1.6 Force light theme
+echo "1.6. Forcing light theme..."
+python3 tools/force-light.py || python tools/force-light.py
+
 # 2. Copy to blog directory
 echo "2. Copying files..."
 cp -r public/* ./
