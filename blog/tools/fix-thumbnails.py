@@ -43,7 +43,6 @@ def replace_thumbnails_in_html(public_dir: Path, slug_to_img: dict) -> int:
             if slug not in slug_to_img:
                 continue
             img_url = slug_to_img[slug]
-            # Use single-quoted raw string to avoid escaping quotes
             html = re.sub(r'(class="feature-container"[^>]*background-image:\s*url\()([\'\"]?)([^)\'\"]+)([\'\"]?)(\))',
                           lambda mm: mm.group(1) + mm.group(2) + img_url + mm.group(4) + mm.group(5),
                           html)

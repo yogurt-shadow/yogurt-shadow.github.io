@@ -16,7 +16,7 @@ hexo generate
 
 # 1.5 修正缩略图
 echo "1.5. 修正缩略图..."
-python3 scripts/fix-thumbnails.py || python scripts/fix-thumbnails.py
+python3 tools/fix-thumbnails.py || python tools/fix-thumbnails.py
 
 # 2. 复制到blog目录
 echo "2. 复制文件..."
