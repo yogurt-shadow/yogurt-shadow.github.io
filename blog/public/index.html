@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     
-
     
-<script>!function(){var e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,t=localStorage.getItem("use-color-scheme")||"auto";("dark"===t||e&&"light"!==t)&&document.documentElement.classList.toggle("dark",!0)}()</script>
+    
+<script>(function(){
+  // Force light theme: ensure dark class is removed
+  try {
+    document.documentElement.classList.remove('dark');
+    // Optional: persist preference to light
+    localStorage.setItem('use-color-scheme', 'light');
+  } catch (e) {}
+})();</script>
     
 
 <meta charset="utf-8" >
