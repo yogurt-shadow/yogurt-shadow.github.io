@@ -27,9 +27,9 @@ cd blog
 ```
 
 Note:
-- Hexo 生成的列表页缩略图可能与各 `post` 中 front matter 的 `img` 字段不一致。
-- `blog/quick_deploy.sh` 在生成静态文件后，会自动调用 Python 脚本 `tools/fix-thumbnails.py` 批量修复 `public/**/*.html` 中的缩略图为对应 `post` 的 `img` 链接。
-- 若服务端或本地环境未安装 Python3，可自行安装或手动跳过该步骤后再部署。
+- Hexo may generate list-page thumbnails that are inconsistent with each post's `img` field in front matter.
+- After generating static files, `blog/quick_deploy.sh` automatically calls the Python script `tools/fix-thumbnails.py` to batch-fix thumbnails in `public/**/*.html` to the corresponding post `img` URL.
+- If Python 3 is not installed, please install it first or skip this step before deploying.
 
 ## 🗑️ Deleting Posts
 
